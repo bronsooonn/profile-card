@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --Dark-yan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --kumbh-font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background-color: var(--Dark-yan);
+  height: 100vh;
+  font-family: var(--kumbh-font-family);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51.85vw bottom 35vh, left 48vw top 52.5vh;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2rem 4rem -10px var(--Dark-grayish-blue);
+          box-shadow: 0 2rem 4rem -10px var(--Dark-grayish-blue);
+}
+
+.card .card__hero {
+  border-radius: 15px 15px 0 0;
+}
+
+.card .card__content {
+  text-align: center;
+}
+
+.card .card__content .content__img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -3.6rem;
+}
+
+.card .card__content .content__name {
+  font-size: 1.125em;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.card .card__content .content__name__span {
+  color: var(--Dark-gray);
+  font-weight: 400;
+  margin-left: .3rem;
+}
+
+.card .card__content .content__place {
+  margin-top: .5rem;
+  font-size: .9em;
+  color: var(--Dark-gray);
+}
+
+.card .card__content .content__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid var(--Dark-grayish-blue);
+  padding: 1.5rem 3rem;
+  margin-top: 1.5rem;
+}
+
+.card .card__content .content__stats .stats--number {
+  font-size: 1.125em;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.card .card__content .content__stats .stats--name {
+  font-size: .65em;
+  margin-top: .18rem;
+  letter-spacing: 1.4px;
+  color: var(--Dark-gray);
+}
+/*# sourceMappingURL=main.css.map */

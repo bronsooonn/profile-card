@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    // Primary
+
+    --Dark-yan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    // Neutral
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    // Fonts
+
+    --kumbh-font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: var(--Dark-yan);
+    height: 100vh;
+    font-family: var(--kumbh-font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51.85vw bottom 35vh, left 48vw top 52.5vh;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2rem 4rem -10px var(--Dark-grayish-blue);
+
+    .card__hero {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card__content {
+        text-align: center;
+
+        .content__img {
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -3.6rem;
+        }
+
+        .content__name {
+            font-size: 1.125em;
+            font-weight: 700;
+            margin-top: 1rem;
+
+            &__span {
+                color: var(--Dark-gray);
+                font-weight: 400;
+                margin-left: .3rem;
+            }
+        }
+
+        .content__place {
+            margin-top: .5rem;
+            font-size: .9em;
+            color: var(--Dark-gray);
+        }
+
+        .content__stats {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--Dark-grayish-blue);
+            padding: 1.5rem 3rem;
+            margin-top: 1.5rem;
+
+            .stats--number {
+                font-size: 1.125em;
+                font-weight: 700;
+                color: var(--Very-dark-desaturated-blue);
+            }
+
+            .stats--name {
+                font-size: .65em;
+                margin-top: .18rem;
+                letter-spacing: 1.4px;
+                color: var(--Dark-gray);
+            }
+        }
+    }
+
+}
